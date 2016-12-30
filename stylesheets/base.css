@@ -231,6 +231,7 @@ div.side_nav{
   border: 10px solid #0b4b73;
 }
 .navlist{
+  margin-top: 1px;
   text-decoration: underline;
 }
 /* ============================================================
