@@ -83,7 +83,7 @@ body {
   PRIMARY STRUCTURE
 ============================================================ */
 .wrapper {
-  width: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -92,50 +92,26 @@ main {
   background-color: #fff;
 }
 
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* ============================================================
-  HEADER & SITE TITLE
-============================================================ */
-/* header */
-
-
-@media all and (min-width: 600px) {
-  header .branding {
-    padding-left: 60px;
-  }
-  header .logo {
-    margin-bottom: 0;
-    margin-left: -60px;
-    float: left;
-    width: 60px;
-    height: 60px;
-  }
-  header .logo img {
-    display: block;
-    margin: 0;
-  }
-  header .social {
-    padding: 15px 0;
-    float: right;
-    width: 100%;
-    text-align: right;
-  }
-}
-/* site title */
-.site-title {
-  padding: 5px 0;
-  background-color: #818181;
+div.contentwrapper{
   text-align: center;
+  padding-left: 30vh;
+  width: 100%;
+  color: #C0C8D8;
+  height: 100vh;
 }
-.site-title h1 {
-  color: #fff;
+/*===========================
+    CONTENT
+=============================*/
+#background{
+  width: 80vh;
+  padding-top: 4%;
 }
+#textwrapper{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 
 /* ============================================================
   FOOTER
@@ -144,83 +120,18 @@ footer {
   padding: 20px 0;
 }
 
-/* ============================================================
-  FUSION ADS
-============================================================ */
-#fusionads {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 20;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.95);
-  font-size: 12px;
-  line-height: 1.2;
-  -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#fusionads .fusion-wrap {
-  display: block;
-  margin: 0 auto 10px auto;
-  width: 130px;
-}
-
-#fusionads a.fusion-text {
-  display: block;
-  color: #787878;
-}
-
-#fusionads a.fusion-img {
-  display: block;
-  margin-bottom: 10px;
-  width: 130px;
-  height: 100px;
-  background-color: #fff;
-}
-
-#fusionads a.fusion-img img {
-  display: block;
-  margin: 0 0 10px 0;
-}
-
-#fusionads a.fusion-poweredby {
-  color: #b4b4b4;
-}
-#fusionads a.fusion-poweredby:hover {
-  color: #818181;
-}
-
-#close-fusionad {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 30;
-  width: 20px;
-  height: 20px;
-  background-color: #282828;
-  text-align: center;
-  line-height: 20px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-
-
-
 /*==========================
     NAV BAR
 ============================*/
 div.side_nav{
-  position: fixed;
+  position: relative;
   width: 30vh;
   text-align: center;
   font-size: 5vh;
   color: BLACK;
   background-color: #455a81;
   height: 100%;
+  float: left;
 }
 #profile_img{
   margin-top: 5vh;
@@ -240,6 +151,12 @@ div.side_nav{
 a {
   text-decoration: none;
   color: #C0C8D8;
+  font-size: 3vh;
+}
+
+#introduction{
+  color: #C0C8D8;
+  text-align: justify;
   font-size: 3vh;
 }
 
