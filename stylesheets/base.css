@@ -103,7 +103,7 @@ div.contentwrapper{
     CONTENT
 =============================*/
 #background{
-  width: 80vh;
+  /**width: 80vh;*/
   padding-top: 4%;
 }
 #textwrapper{
