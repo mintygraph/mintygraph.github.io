@@ -32,9 +32,7 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
-}
+
 
 blockquote, q {
   quotes: none;
@@ -119,7 +117,7 @@ div.contentwrapper{
 EXP & EDU Content
 =============================*/
 #resumecontainer{
-    width:80vh;
+    width:90vh;
 }
 div.floatContainer{
    display: flex;
@@ -130,17 +128,17 @@ div.itemwrapper{
     padding-bottom: 2vh;
 }
 p.textHeader{
-    font-size: 4vh;
+    font-size: 3vh;
     text-align: left;
     text-decoration:underline;
     padding-bottom: 1vh;
 }
 p.textleveloneleft{
-    font-size: 3vh;
+    font-size: 2.5vh;
     text-align: left;
 }
 p.textleveloneright{
-    font-size: 3vh;
+    font-size: 2vh;
     text-align: left;
 }
 p.textleveltwo{
@@ -153,6 +151,13 @@ p.textleveltwo{
     display: flex;
     justify-content: center;
     font-size: 2vh;
+}
+li.dscr{
+    text-align: left;
+    margin:0;
+    padding:0;
+    padding-bottom: .5vh;
+    display:list-item;
 }
 /* ============================================================
   FOOTER
