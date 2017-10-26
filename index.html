@@ -1,321 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Denny Min</title>
 
-<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
 
-    <title style="color: aliceblue">Denny Min</title>
+        <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    </head>
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <body>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <nav id="navbar" class="navbar navbar-light fixed-top justify-content-end py-0">
+            <a id="home" class="nav-link" href="#">Home</a>
+            <a id="myskills" class="nav-link" href="#">My Skills</a>
+            <a id="portfolio" class="nav-link" href="#">Portfolio</a>
+            <a id="currently" class="nav-link" href="#">Currently</a>
+        </nav>
+        <div id="banner">
+            <div id="bannertextwrapper">
+                <div id="bannertext" style="display: none">
+                    <p style="font-size: 4em">Syung Denny Min</p>
+                    <p style="font-size: 1.5em">Engineer, Designer, Meme Sommelier</p>
+                </div>
 
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
-            </li>
-            <li>
-                <a href="#top" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
-            </li>
-            <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
-            </li>
-            <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center" style="color: aliceblue">
-            <img src="img/profile2.JPG" style="height: 300px; border-radius: 50%; border: 5px solid; border-color:darkgrey" >
-            <h1>Syung Denny Min</h1>
-            <h3>Engineer, Designer &amp; Photographer</h3>
-            <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            </div>
         </div>
-    </header>
-
-    <!-- About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <img src="img/introduction.jpg" style = "height: 300px; border:5px solid; border-color: cornflowerblue">
-                    <h2>Nice to meet you! My name is Denny</h2>
-                    <p class="lead">I am a third year Mechanical Engineering student attending UC Berkeley.  My interests are in robotics and tech consultancy. As an engineer, I want to help bridge the gap between engineering and business. 
+        <div class="container-fluid" style="margin-top:75px">
+            <div id="jumbotron" class="jumbotron jumbotron-fluid mx-5">
+                <div class="container-fluid row mx-auto">
+                    <div id="profilecontainer" class="container-fluid col-lg-1 px-5">
+                        <img id="profile" class="img-fluid rounded-circle mx-auto " src="./img/profile2.jpg" style="border-style: solid; border-width: 5px">
+                    </div>
+                    <div class="container col-lg-8">
+                        <h1 class="display-4">Syung Denny Min</h1>
+                        <hr class="mt-1">
+                        <p>Hello and welcome! My name is Syung, but you can call me Denny. I am a third year mechanical engineering student at University of California, Berkeley. Along with my major, I am currently pursuing Electical Engineering and Computer Sciences Minor, Design Innovation Certificate, and Technology Entrepreneurship Certificate. I want to use my engineering background and my management experience to bridge the gap between engineering and business.</p>
+                        <p>I love learning new skills and using them to create things that people can enjoy. Feel free to talk to me about what I am learning right now or to suggest what I could learn next!</p>
+                    </div>
                 </div>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Specialities</h2>
-                    <hr class="small">
+            <div id="myskillcontent" class="container-fluid">
+                <h2>What Have I Learned So Far?</h2>
+                <hr class="mt-2 mb-5">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Prototyping</strong>
-                                </h4>
-                                <p>3 years of experience with fabrication equipments, such as 3D printing, laser cutting, and metal machining.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
+                        <div class="col-3 text-center">
+                            <img class=".img-fluid logo" src="./Assets/Prototype.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <p class="my-1" style="font-size: 1.25rem">Prototyping</p>
+                            <p class="text-muted text-center">3 years of fabrication experience (3D printing, metal shop, laser cutting, etc.)</p>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Modeling</strong>
-                                </h4>
-                                <p>3 years of AutoCAD and Solidworks experience. </p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
+                        <div class="col-3 text-center">
+                            <img class=".img-fluid logo" src="./Assets/cslogo.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <p class="my-1" style="font-size: 1.25rem">Programming</p>
+                            <p class="text-muted">Experience with Java, Javascript, HTML, CSS, and Arduino Programming.</p>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Creative</strong>
-                                </h4>
-                                <p>I have experience in the Adobe Creative Suite: Photoshop, Illustrator, Lightroom.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
+                        <div class="col-3 text-center">
+                            <img class=".img-fluid logo" src="./Assets/Design.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <p class="my-1" style="font-size: 1.25rem">Design</p>
+                            <p class="text-muted">Certified SolidWorks Associate with 3 years experience, 2 years experience with Adobe Design Suite (Photoshop, Illustrator, InDesign)</p>
+
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Management</strong>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <a href="#" class="btn btn-light">Learn More</a>
-                            </div>
+                        <div class="col-3 text-center">
+                            <img class=".img-fluid logo" src="./Assets/Management.svg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <p class="my-1" style="font-size: 1.25rem">Management</p>
+                            <p class="text-muted">Leading a 15 member college competition team managing its budget, project timeline, etc.</p>
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+            <div id="portfoliocontent" class="container-fluid mt-5">
+                <h2>Sample Work</h2>
+                <hr class="my-2 mb-5">
+                <div class="row">
+                    <div class="col-lg-12 mx-auto">
+                        <div class="row mb-5">
+                            <div class="col-lg-6">
+                                <div class="skillcontainer text-center mx-auto">
+                                    <img class="img-fluid" src="./img/Bearmaps.PNG" 
+                                         alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <div class="textoverlay">BearMaps</div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="skillcontainer text-center mx-auto">
+                                    <img src="./img/zoolander.png" 
+                                         alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <div class="textoverlay">Zoolander</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="skillcontainer text-center mx-auto">
+                                    <img src="https://pbs.twimg.com/profile_images/626481857161375748/OeXi9avz.png" 
+                                         alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <div class="textoverlay">SIXT33N</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="skillcontainer text-center mx-auto">
+                                    <img src="./img/Projects/thiswebsite.PNG" 
+                                         alt="Avatar" class="image">
+                                    <div class="overlay">
+                                        <div class="textoverlay">This Website!</div>
+                                    </div>
+                                </div>
+                            </div>
 
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1>Vertically Centered Text</h1>
-        </div>
-    </aside>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Projects</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
+
+
+
                         </div>
                     </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
-                </div>
-                <!-- /.col-lg-10 -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
                 </div>
             </div>
-        </div>
-    </aside>
+            <div id="currentlycontent" class="container-fluid mt-5">
+                <h2>Currently</h2>
+                <hr class="my-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet, mauris non tincidunt eleifend, nisi dui venenatis lorem, nec lacinia libero ipsum ut urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ultrices
+                    pretium nisl quis interdum. Nunc ut iaculis ante. Nullam ut molestie lectus, nec tempus odio. Curabitur faucibus nec massa nec rutrum. Integer gravida velit vel mauris rhoncus, et condimentum tortor mattis. Etiam sem leo, auctor et placerat a, euismod
+                    eu nisl. Sed in vulputate mauris, et imperdiet est. Vestibulum odio nibh, tristique in aliquam et, mollis quis purus. Ut semper, quam nec aliquam ultrices, turpis nunc aliquet lectus, non tristique urna leo et massa. Pellentesque vel arcu condimentum,
+                    luctus velit a, porttitor lacus. Nunc ut ipsum libero. Nunc diam ipsum, mattis at metus sed, porta mollis tortor. Curabitur blandit viverra nunc id vestibulum. Fusce convallis velit quis arcu efficitur malesuada et sit amet sapien. Nulla facilisi.
+                    Mauris sagittis velit sit amet justo finibus, vitae fringilla magna imperdiet. Duis eu massa non ex egestas suscipit sed non lacus. Sed ac dui non lectus pharetra imperdiet nec vel lacus. Sed dignissim lectus sapien, quis porttitor quam gravida
+                    vitae. Cras sed finibus felis. Suspendisse potenti. Morbi imperdiet placerat augue, quis elementum erat tincidunt et. Nullam ut molestie nisl. Morbi ac felis auctor, lobortis ipsum non, efficitur elit. Sed mattis pharetra nunc non tempus. Curabitur
+                    id ante id lacus luctus tristique. Phasellus urna libero, volutpat non eros ut, molestie tempus dui. Integer hendrerit venenatis feugiat. Duis ipsum lectus, euismod vitae suscipit eu, maximus id mauris. Quisque mauris metus, auctor nec sollicitudin
+                    vitae, volutpat eu tellus. Cras egestas venenatis feugiat. Mauris commodo elementum ultrices. Nam tellus ex, condimentum eu lorem nec, lobortis finibus quam. Sed id massa vel magna gravida sodales id at risus. Donec et nisi vitae leo consequat sodales
+                    ut ut sem. Ut eget sagittis felis. Morbi dignissim dictum maximus. Integer ornare libero nec metus efficitur, eget scelerisque odio ultricies. Aenean pellentesque eget mi quis tempus. Duis ut est euismod, bibendum lacus ac, mattis nulla. Sed faucibus
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
+                    pharetra sem id tincidunt. Etiam tempus mi vestibulum risus tempor consectetur. Aenean ligula arcu, consectetur quis cursus id, pharetra id est. Aliquam interdum felis ut varius facilisis. Nulla magna mauris, rhoncus nec maximus porta, pretium ut
+                    enim. In eget dignissim odio, tincidunt consequat ex. Sed maximus, sapien pretium sollicitudin convallis, ex nisi ullamcorper ligula, vel finibus magna felis at nibh. Praesent ac metus id lacus molestie posuere eu vel nisl. Proin quis laoreet dui.
+                    Nunc vulputate id erat eu scelerisque.</p>
+            </div>
+            <div id="thingsienjoy" class="container-fluid mt-5">
+                <h2>Things that I enjoy</h2>
+                <hr class="my-2">
+                <p>Here are some things that I enjoy that I'd like to share with you!</p>
+                <div class="container text-center">
+                    <iframe src="https://open.spotify.com/embed/user/denny.min/playlist/5Qex4xX8ghk1iYyRW4ycLy" width="400" height="300"frameborder="0" allowtransparency="false"></iframe>
+                    <iframe width="400" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/5539303&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
                 </div>
             </div>
         </div>
-        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-    </footer>
+        <div id="footer" class="container-fluid" style="background-color:#ff5000; color:white">
+            Handcrafted Website by Syung Denny Min using Bootstrap 4.0.0, jQuery 2017, and lots of love.
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <script  src="js/index.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    </script>
-
-</body>
-
+    </body>
 </html>
