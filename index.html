@@ -3,18 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>Denny Min</title>
-
-
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
-
         <link rel="stylesheet" href="css/style.css">
-
-
     </head>
-
     <body>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
         <nav id="navbar" class="navbar navbar-light fixed-top justify-content-end py-0">
             <a id="home" class="nav-link" href="#">Home</a>
             <a id="myskills" class="nav-link" href="#">My Skills</a>
@@ -30,7 +23,7 @@
 
             </div>
         </div>
-        <div class="container-fluid" style="margin-top:75px">
+        <div id="mainContent" class="container-fluid" style="margin-top:75px">
             <div id="jumbotron" class="jumbotron jumbotron-fluid mx-5">
                 <div class="container-fluid row mx-auto">
                     <div id="profilecontainer" class="container-fluid col-lg-1 px-5">
@@ -45,7 +38,7 @@
                 </div>
             </div>
             <div id="myskillcontent" class="container-fluid">
-                <h2>What Have I Learned So Far?</h2>
+                <h2>What I Know</h2>
                 <hr class="mt-2 mb-5">
                 <div class="container-fluid">
                     <div class="row">
@@ -75,52 +68,152 @@
             <div id="portfoliocontent" class="container-fluid mt-5">
                 <h2>Sample Work</h2>
                 <hr class="my-2 mb-5">
+                List of projects that I have worked on,
                 <div class="row">
                     <div class="col-lg-12 mx-auto">
                         <div class="row mb-5">
                             <div class="col-lg-6">
-                                <div class="skillcontainer text-center mx-auto">
-                                    <img class="img-fluid" src="./img/Bearmaps.PNG" 
-                                         alt="Avatar" class="image">
-                                    <div class="overlay">
-                                        <div class="textoverlay">BearMaps</div>
+                                <a href="#bearMapsModal" role="button" data-toggle="modal">
+                                    <div class="skillcontainer text-center mx-auto">
+                                        <img class="img-fluid" src="./img/Bearmaps.PNG" 
+                                             alt="Bearmap" class="image">
+                                        <div class="overlay">
+                                            <div class="textoverlay">BearMaps
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>  
+                                </a>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="skillcontainer text-center mx-auto">
-                                    <img src="./img/zoolander.png" 
-                                         alt="Avatar" class="image">
-                                    <div class="overlay">
-                                        <div class="textoverlay">Zoolander</div>
+                            <!-----BEAR MAPS MODAL----->
+                            <div class="modal fade" id="bearMapsModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Bear Maps</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid my-2" src="./img/Bearmaps.PNG" 
+                                                 alt="Bearmap">
+                                            <ul>
+                                                <li>Google Maps like app of UC Berkeley</li>
+                                                <li>Implemented A* algorithm to find shortest path between two OSM nodes. 
+                                                </li>
+                                                <li>Created a quadtree data structure to organize map tile images to allow map rastering within the query window at varying zoom levels.</li>
+                                                <li> Created using Java
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!------------------------->
+                            <div class="col-lg-6">
+                                <a href="#zoolanderModal" role="button" data-toggle="modal">
+                                    <div class="skillcontainer text-center mx-auto">
+                                        <img src="./img/zoolander.png" 
+                                             alt="Zoolander" class="image">
+                                        <div class="overlay">
+                                            <div class="textoverlay">Zoolander</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-------ZOOLANDER MODAL------->
+                            <div class="modal fade" id="zoolanderModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Zoolander</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img-fluid my-2" src="./img/zoolander.png" 
+                                                 alt="Zoolander">
+                                            <ul>
+                                                <li>RC car designed to follow a remote beacon or approach a GPS coordinate</li>
+                                                <li>Used LabView to create PID controller for the car; measure distance from remote using ultra sonic sensor and coordinate using GPS breakout.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------------------------->
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="skillcontainer text-center mx-auto">
-                                    <img src="https://pbs.twimg.com/profile_images/626481857161375748/OeXi9avz.png" 
-                                         alt="Avatar" class="image">
-                                    <div class="overlay">
-                                        <div class="textoverlay">SIXT33N</div>
+                                <a href="#tinderforXModal" role="button" data-toggle="modal">
+                                    <div class="skillcontainer text-center mx-auto">
+                                        <img src="./img/Projects/tinderforx.PNG" 
+                                             alt="Tinder for X" class="image">
+                                        <div class="overlay">
+                                            <div class="textoverlay">Tinder for _</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-------TinderforX MODAL------->
+                            <div class="modal fade" id="tinderforXModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Tinder for _</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="image my-2" src="./img/Projects/tinderforx.PNG" 
+                                                 alt="Tinder For X" >
+                                            <ul>
+                                                <li><a href="tinderforx.html">Random Tinder Generator</a></li>
+                                                <li>A random word generator that creates random Tinder ideas; inspired by <a href="tiffzhang.com/startup/">start up generator</a> by by Mike Bradley and Tiff Zhang.
+                                                </li>
+                                                <li> Created with jQuery, Bootstrap
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--------------------------------->
                             <div class="col-lg-6">
-                                <div class="skillcontainer text-center mx-auto">
-                                    <img src="./img/Projects/thiswebsite.PNG" 
-                                         alt="Avatar" class="image">
-                                    <div class="overlay">
-                                        <div class="textoverlay">This Website!</div>
+                                <a href="#websiteModal" role="button" data-toggle="modal">
+
+                                    <div class="skillcontainer text-center mx-auto">
+                                        <img src="./img/Projects/thiswebsite.PNG" 
+                                             alt="Avatar" class="image">
+                                        <div class="overlay">
+                                            <div class="textoverlay">This Website!</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-------website MODAL------->
+                            <div class="modal fade" id="websiteModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">This Website!</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ul>
+                                                <li>Created using Bootstrap and jQuery</li>
+                                                <li>Graphics created using Adobe Illustrator</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
+                            <!--------------------------------->
                         </div>
                     </div>
                 </div>
@@ -128,7 +221,7 @@
             <div id="currentlycontent" class="container-fluid mt-5">
                 <h2>Currently</h2>
                 <hr class="my-2">
-                <p>Be sure to check back to see what I am working on!</p>
+                <p>Be sure to check back often to see what I am working on at the moment!</p>
             </div>
             <div id="thingsienjoy" class="container-fluid mt-5">
                 <h2>Things that I enjoy</h2>
@@ -150,13 +243,12 @@
             </div>
         </div>
         <div id="footer" class="container-fluid" style="background-color:#ff5000; color:white">
-            Handcrafted Website by Syung Denny Min using Bootstrap 4.0.0, jQuery 2017, and lots of love.
+            Handcrafted Website by Syung Denny Min with lots of love.
         </div>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
-
         <script  src="js/index.js"></script>
-
     </body>
 </html>
