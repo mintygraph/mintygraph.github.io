@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2bca124-74d9-4a93-b12d-9297a176bbe8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/weather.js" afterPath="$PROJECT_DIR$/js/weather.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,6 +33,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="244" column="94" lean-forward="false" selection-start-line="244" selection-start-column="94" selection-end-line="244" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="weather.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/weather.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weather.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="weather.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/weather.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
@@ -79,10 +89,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/weather.css" />
         <option value="$PROJECT_DIR$/weather.html" />
         <option value="$PROJECT_DIR$/js/weather.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -100,8 +110,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="298" />
-    <option name="y" value="700" />
+    <option name="x" value="250" />
+    <option name="y" value="370" />
     <option name="width" value="1842" />
     <option name="height" value="1136" />
   </component>
@@ -189,17 +199,18 @@
       <workItem from="1514487393510" duration="2019000" />
       <workItem from="1514508352553" duration="13691000" />
       <workItem from="1514568600444" duration="1135000" />
-      <workItem from="1514583133080" duration="6404000" />
+      <workItem from="1514583133080" duration="6741000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61982000" />
+    <option name="totallyTimeSpent" value="62319000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="149" y="350" width="921" height="568" extended-state="0" />
+    <frame x="125" y="185" width="921" height="568" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18963616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18963616" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -711,18 +722,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="244" column="60" lean-forward="false" selection-start-line="244" selection-start-column="60" selection-end-line="244" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/weather.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/weather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#630#677#0" expanded="false" />
+            <element signature="e#741#787#0" expanded="false" />
+            <element signature="e#852#899#0" expanded="false" />
+            <element signature="e#964#1010#0" expanded="false" />
+            <element signature="e#1075#1122#0" expanded="false" />
+            <element signature="e#1187#1233#0" expanded="false" />
+            <element signature="e#1298#1345#0" expanded="false" />
+            <marker date="1514589712695" expanded="true" signature="1463:1468" ph="°" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -741,20 +762,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/weather.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#630#677#0" expanded="false" />
-            <element signature="e#741#787#0" expanded="false" />
-            <element signature="e#852#899#0" expanded="false" />
-            <element signature="e#964#1010#0" expanded="false" />
-            <element signature="e#1075#1122#0" expanded="false" />
-            <element signature="e#1187#1233#0" expanded="false" />
-            <element signature="e#1298#1345#0" expanded="false" />
-            <marker date="1514589712695" expanded="true" signature="1463:1468" ph="°" />
-          </folding>
+        <state relative-caret-position="155">
+          <caret line="244" column="94" lean-forward="false" selection-start-line="244" selection-start-column="94" selection-end-line="244" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
