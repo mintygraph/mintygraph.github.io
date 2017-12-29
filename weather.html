@@ -3,37 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Whether Weather</title>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch'
+          href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link rel="stylesheet" href="css/weather.css">
 </head>
 <body>
-<div class="container text-center mx-auto py-10">
-    <div class="container text-center">
-        <h1 id="WeatherTitle" class="display-1">
+<div class="container text-center my-4">
+    <div class="container">
+        <h1 id="weatherTitle">
             Daily Weather Report
         </h1>
-        <div id="intro">
-            Hello, from <span id="location"></span>!
-        </div>
-        <div id="tempcontainer">
-            <div id="tempDisp">
-                Temp:
-                <div id="tempVal"><span class="tempUnit"></span></div>
-                Min:
-                <div id="minTempVal"><span></span><span class="tempUnit"></span></div>
-                Max:
-                <div id="maxTempVal"><span></span><span class="tempUnit"></span></div>
+        <p class="lead" id="introLoc">
+            Hello from <span id="location"></span>!
+        </p>
+        <div class="my-4">
+            <div class=" weatherInfo lead" id="introWeather">
+                <span id="weather"></span>
+            </div>
+            <div class="weatherInfo lead" id="windContainer">
+                <div id="windInfo">
+                </div>
             </div>
         </div>
-        <div id="image"></div>
-        <div id="windContainer">
-            <div id="windDir">
-
-            </div>
-            <div id="windSpeed">
-
+        <div class="my-4" id="tempcontainer">
+            <div class="row" id="tempDisp">
+                <div class="col">
+                    Current: <p class="value text-muted" id="tempVal"></p>
+                </div>
+                <div class="col">
+                    Min Temp: <p class="value text-muted" id="minTempVal"></p>
+                </div>
+                <div class="col">
+                    Max Temp: <p class="value text-muted" id="maxTempVal"></p>
+                </div>
             </div>
         </div>
     </div>
+</div>
+<div class="footer text-center">
+    Made by <a href="index.html">Denny Min.</a>
+    If no location is detected, it displays San Francisco's weather.
 </div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"

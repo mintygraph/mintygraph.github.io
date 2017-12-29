@@ -1,0 +1,21 @@
+body{
+    font-family:'Cabin', sans-serif, Arial;
+}
+#weatherTitle{
+    font-size: 5vw;
+}
+.weatherInfo{
+    font-size: 2vw;
+}
+#introLoc{
+    font-size: 3vw;
+}
+#tempcontainer{
+    font-size: 2vw;
+}
+#tempDisp{
+    font-weight:bold;
+}
+#tempDisp.value{
+    font-weight: normal;
+}
