@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Whether Weather</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
 </head>
 <body>
-    <div class="container-fluid">
-        <div id="WeatherTitle">
-            Weather Report
-        </div>
-        <div id="location">
+<div class="container text-center mx-auto py-10">
+    <div class="container text-center">
+        <h1 id="WeatherTitle" class="display-1">
+            Daily Weather Report
+        </h1>
+        <div id="intro">
+            Hello, from <span id="location"></span>!
         </div>
         <div id="tempcontainer">
             <div id="tempDisp">
-                <div id="tempNum"><span id="tempVal"></span><span id="tempUnit"></span></div>
+                Temp:
+                <div id="tempVal"><span class="tempUnit"></span></div>
+                Min:
+                <div id="minTempVal"><span></span><span class="tempUnit"></span></div>
+                Max:
+                <div id="maxTempVal"><span></span><span class="tempUnit"></span></div>
             </div>
         </div>
-    </div>>
-</body>
+        <div id="image"></div>
+        <div id="windContainer">
+            <div id="windDir">
+
+            </div>
+            <div id="windSpeed">
+
+            </div>
+        </div>
+    </div>
+</div>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+<script src="./js/weather.js"></script>
+</body>
 </html>
