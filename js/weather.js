@@ -13,7 +13,6 @@ $.when($.getJSON("http://freegeoip.net/json/")).done(function(locations){
     $.when($.getJSON("https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon)).done(function(weatherData){
         $(document).ready(function () {
             var windDirData = weatherData['wind']['deg'];
-            console.log(weatherData);
             if(12.5 < windDirData || windDirData <= 77.5){
                 windDir = 'NE';
             }
