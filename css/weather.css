@@ -1,5 +1,8 @@
 body{
     font-family:'Cabin', sans-serif, Arial;
+    color: aliceblue;
+    background-color: midnightblue;
+    background-image: url("/img/weather/boat_in_the_sea_by_yousefcia-d4u2pcw.jpg");
 }
 #weatherTitle{
     font-size: 5vw;
