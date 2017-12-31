@@ -12,7 +12,6 @@ $.when($.getJSON("http://freegeoip.net/json/")).done(function (locations) {
     }
     $.when($.getJSON("https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lon)).done(function (weatherData) {
         $(document).ready(function () {
-            console.log(weatherData)
             var windDirData = weatherData['wind']['deg'];
             if (12.5 < windDirData || windDirData <= 77.5) {
                 windDir = 'NE';
@@ -54,7 +53,6 @@ $.when($.getJSON("http://freegeoip.net/json/")).done(function (locations) {
                         "url('../img/weather/snow_red_by_madec_brice.jpg')");
                     break;
                 case 7: //atmosphere
-                    console.log("a")
                     $('body').css("background-image","url(../img/weather/atmwith_the_wind_by_ryky-d9orj7n.png)");
                     break;
                 case 8: //clear / clouds
