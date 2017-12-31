@@ -2,7 +2,7 @@
 var lat = 37.7749;
 var lon = -122.4194;
 var city = "San Francisco";
-var unit = 'C';
+var isC = true;
 var winDir = 'N'
 $.when($.getJSON("http://freegeoip.net/json/")).done(function (locations) {
     if (locations['city'] !== '') {
@@ -53,7 +53,7 @@ $.when($.getJSON("http://freegeoip.net/json/")).done(function (locations) {
                         "url('../img/weather/snow_red_by_madec_brice.jpg')");
                     break;
                 case 7: //atmosphere
-                    $('body').css("background-image","url(../img/weather/atmwith_the_wind_by_ryky-d9orj7n.png)");
+                    $('body').css("background-image", "url(../img/weather/atmwith_the_wind_by_ryky-d9orj7n.png)");
                     break;
                 case 8: //clear / clouds
                     $('.body').css("background-image",
@@ -65,25 +65,51 @@ $.when($.getJSON("http://freegeoip.net/json/")).done(function (locations) {
                     break;
             }
             $('#windInfo').html(weatherData['wind']['speed'] +
-                '<a>' + ' mph' + '</a>' + ' <a>' + windDir + '&deg;' + '</a>');
+                '<a>' + ' kph' + '</a>' + ' <a>' + windDir + '&deg;' + '</a>');
             $('#weather').html(weatherData['weather'][0]['main']);
             $('#location').html(city);
-            $('#tempVal').html('' + weatherData['main']['temp'] + '&deg;' + unit);
-            $('#minTempVal').html('' + weatherData['main']['temp_min'] + '&deg;' + unit);
-            $('#maxTempVal').html('' + weatherData['main']['temp_max'] + '&deg;' + unit);
+            $('#tempVal').html('' + weatherData['main']['temp'] + '&deg; C');
+            $('#minTempVal').html('' + weatherData['main']['temp_min'] + '&deg; C');
+            $('#maxTempVal').html('' + weatherData['main']['temp_max'] + '&deg; C');
+            $('#tempToggle ').click(function () {
+                isC = switchUnit(weatherData,isC);
+                }
+            )
         })
-    });
+    })
 });
 
 
-function switchTemp(num, unit) {
-    if (unit === 'F') {
 
-    } else if (unit == 'C') {
+function switchUnit(weatherData, isC) {
+    var temp;
+    var tempMin;
+    var tempMax;
+    var tempUnit = 'C';
+    var speedUnit = 'kph'
+    var windSpeed = weatherData['wind']['speed'];
+    if (isC) {
+        tempUnit = 'F';
+        speedUnit = ' mph'
+        windSpeed = Math.round(10*(0.621371*weatherData['wind']['speed']))/10 ;
+        temp = Math.round(10*(weatherData['main']['temp'] * (9/5) + 32))/10 ;
+        tempMin = Math.round(10*(weatherData['main']['temp_min'] * (9/5) + 32))/10 ;
+        tempMax = Math.round(10*(weatherData['main']['temp_max'] * (9/5) + 32))/10 ;
 
+    } else {
+        tempUnit = 'C';
+        speedUnit = ' kph'
+        windSpeed = weatherData['wind']['speed'];
+        temp = weatherData['main']['temp'];
+        tempMin = weatherData['main']['temp_min'];
+        tempMax = weatherData['main']['temp_max'];
     }
+    $('#tempVal').html('' + temp + '&deg;' + tempUnit);
+    $('#minTempVal').html('' + tempMin + '&deg;' + tempUnit);
+    $('#maxTempVal').html('' + tempMax + '&deg;' + tempUnit);
+    $('#windInfo').html(windSpeed + '<a>' + speedUnit + '</a>' + ' <a>' + windDir + '&deg;' + '</a>');
+    return !isC
 }
-
 function weatherCond(weatherID) {
     var weatherCode = '' + weatherID['weather'][0]['id'];
     return parseInt(weatherCode[0]);
