@@ -10,7 +10,6 @@ body {
     background-position: center center;
     background-attachment: fixed;
     height: inherit;
-    background-image: url("../img/weather/cloudsunset.png");
 }
 #webpagewrapper{
     background: black;
