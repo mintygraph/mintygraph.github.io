@@ -1,8 +1,25 @@
+html{
+    height:100%;
+}
 body{
     font-family:'Cabin', sans-serif, Arial;
     color: aliceblue;
-    background-color: midnightblue;
-    background-image: url("/img/weather/boat_in_the_sea_by_yousefcia-d4u2pcw.jpg");
+    background-color: #3e619b;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height:inherit;
+    background-image: url("../img/weather/atmwith_the_wind_by_ryky-d9orj7n.png");
+}
+#webpagewrapper{
+    background: black;
+    background-size:cover;
+    opacity:0.7;
+    height: inherit;
+}
+#textwrap{
+    opacity: 1;
 }
 #weatherTitle{
     font-size: 5vw;

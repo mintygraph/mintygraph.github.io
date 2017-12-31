@@ -38,19 +38,32 @@ $.when($.getJSON("http://freegeoip.net/json/")).done(function (locations) {
             switch (weatherCond(weatherData)) {
                 //weather conditions from openweathermap.org/weather-conditions
                 case 2: //thunderstorm,
-                    $('html').css("background-image", "url(../img)");
+                    $('.body').css("background-image",
+                        "url(../img/weather/thunderstorm_in_the_archipelago_june_24__by_eskile.jpg)");
                     break;
                 case 3: // drizzle
+                    $('.body').css("background-image",
+                        "url(../img/weather/drizzlerain_and_coffee_by_window_by_wowwy91801-d8zch3s.jpg)");
                     break;
                 case 5: //rain
+                    $('.body').css("background-image",
+                        "url(../img/weather/drizzlerain_and_coffee_by_window_by_wowwy91801-d8zch3s.jpg)");
                     break;
                 case 6: //snow
+                    $('.body').css("background-image",
+                        "url('../img/weather/snow_red_by_madec_brice.jpg')");
                     break;
                 case 7: //atmosphere
+                    console.log("a")
+                    $('body').css("background-image","url(../img/weather/atmwith_the_wind_by_ryky-d9orj7n.png)");
                     break;
                 case 8: //clear / clouds
+                    $('.body').css("background-image",
+                        "url(../img/weather/cloudsunset.png)");
                     break;
                 case 9: //extreme
+                    $('.body').css("background-image",
+                        "url(../img/weather/extremewarlockonaclif_by_wonderwig-d9b76kt.jpg)");
                     break;
             }
             $('#windInfo').html(weatherData['wind']['speed'] +
@@ -75,7 +88,7 @@ function switchTemp(num, unit) {
 
 function weatherCond(weatherID) {
     var weatherCode = '' + weatherID['weather'][0]['id'];
-    return weatherCode[0];
+    return parseInt(weatherCode[0]);
 }
 
 

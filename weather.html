@@ -8,43 +8,46 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link rel="stylesheet" href="css/weather.css">
 </head>
-<body>
-<div class="container text-center my-4">
-    <div class="container">
-        <h1 id="weatherTitle">
-            Daily Weather Report
-        </h1>
-        <p class="lead" id="introLoc">
-            Hello from <span id="location"></span>!
-        </p>
-        <div class="my-4">
-            <div class=" weatherInfo lead" id="introWeather">
-                <span id="weather"></span>
+
+<div id="webpagewrapper">
+    <div class="container" id="textwrap">
+        <div class="container text-center py-4">
+            <h1 id="weatherTitle">
+                Daily Weather Report
+            </h1>
+            <p class="lead" id="introLoc">
+                Hello from <span id="location"></span>!
+            </p>
+            <div class="my-4">
+                <div class=" weatherInfo lead" id="introWeather">
+                    <span id="weather"></span>
+                </div>
+                <div class="weatherInfo lead" id="windContainer">
+                    <div id="windInfo">
+                    </div>
+                </div>
             </div>
-            <div class="weatherInfo lead" id="windContainer">
-                <div id="windInfo">
+            <div class="my-4" id="tempcontainer">
+                <div class="row" id="tempDisp">
+                    <div class="col">
+                        Current: <p class="value text-muted" id="tempVal"></p>
+                    </div>
+                    <div class="col">
+                        Min Temp: <p class="value text-muted" id="minTempVal"></p>
+                    </div>
+                    <div class="col">
+                        Max Temp: <p class="value text-muted" id="maxTempVal"></p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="my-4" id="tempcontainer">
-            <div class="row" id="tempDisp">
-                <div class="col">
-                    Current: <p class="value text-muted" id="tempVal"></p>
-                </div>
-                <div class="col">
-                    Min Temp: <p class="value text-muted" id="minTempVal"></p>
-                </div>
-                <div class="col">
-                    Max Temp: <p class="value text-muted" id="maxTempVal"></p>
-                </div>
-            </div>
+        <div class="footer text-center">
+            Made by <a href="index.html">Denny Min.</a>
+            If no location is detected, it displays San Francisco's weather.
         </div>
     </div>
 </div>
-<div class="footer text-center">
-    Made by <a href="index.html">Denny Min.</a>
-    If no location is detected, it displays San Francisco's weather.
-</div>
+
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
         integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
