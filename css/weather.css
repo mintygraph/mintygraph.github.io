@@ -1,16 +1,16 @@
 html{
     height:100%;
 }
-body{
-    font-family:'Cabin', sans-serif, Arial;
+body {
+    font-family: 'Cabin', sans-serif, Arial;
     color: aliceblue;
     background-color: #3e619b;
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    height:inherit;
-    background-image: url("../img/weather/atmwith_the_wind_by_ryky-d9orj7n.png");
+    height: inherit;
+    background-image: url("../img/weather/cloudsunset.png");
 }
 #webpagewrapper{
     background: black;
