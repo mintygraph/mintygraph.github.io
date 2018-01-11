@@ -1,0 +1,17 @@
+html,body{
+    height:100%;
+}
+#search-content-wrapper{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width: 100%;
+}
+#result-content-wrapper{
+    display:none;
+}
+#search{
+    width: 50vw;
+}
