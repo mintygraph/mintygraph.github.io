@@ -1,6 +1,6 @@
 html,body{
-    height:100%;
-}
+     height:100%;
+ }
 #search-content-wrapper{
     display: none;
     flex-direction: column;
@@ -9,9 +9,19 @@ html,body{
     height:100%;
     width: 100%;
 }
+#search{
+    width: 50vw;
+}
 #result-content-wrapper{
     display:none;
 }
-#search{
-    width: 50vw;
+.result{
+    text-decoration: none !important;
+    color:black !important;
+}
+.result:hover
+{
+    color:#42b3f4 !important;
+    text-decoration:none !important;
+    cursor:pointer !important;
 }
