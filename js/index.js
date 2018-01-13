@@ -14,12 +14,6 @@ $(document).ready(function () {
             2000
         );
     });
-    $("#currently").click(function () {
-        $("html, body").animate(
-            { scrollTop: $("#currentlycontent").offset().top },
-            2000
-        );
-    });
     $("#bannertext").fadeIn('slow');
     $(window).on("scroll",function(e){
        if($(window).scrollTop() > 50){
