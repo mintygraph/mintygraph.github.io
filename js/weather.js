@@ -4,7 +4,7 @@ var lon = -122.4194;
 var city = "San Francisco";
 var isC = true;
 var winDir = 'N'
-$.when($.getJSON("http://freegeoip.net/json/")).done(function (locations) {
+$.when($.getJSON("https://freegeoip.net/json/")).done(function (locations) {
     if (locations['city'] !== '') {
         lat = locations['latitude'];
         lon = locations['longitude'];
